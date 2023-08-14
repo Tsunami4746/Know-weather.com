@@ -16,7 +16,7 @@ api.then((response) => {
     // Checking Day
     let Day
     let Time_image 
-    if (date.getHours() <=20 && date.getHours() <=5){
+    if (date.getHours() <=20 && date.getHours() >=5){
         Day = "day"
         DayLogo.src = "/day.jpg"
         DayLogo.parentElement.insertAdjacentText("beforeend", Day)
