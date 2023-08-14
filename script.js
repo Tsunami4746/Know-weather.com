@@ -29,9 +29,9 @@ api.then((response) => {
     let Time = `${date.getHours()}:${date.getMinutes()} (${response.timezone_abbreviation})`
     TimeElement.insertAdjacentText("beforeend", Time)
     //Setting Temperature
-    let Temp = response.current_weather.temperature
+    let Temp = `${response.current_weather.temperature} (Celcius)`
     TempElement.insertAdjacentText("beforeend", Temp)
     //Setting Wind Speed
-    let Wind = response.current_weather.windspeed
+    let Wind = `${response.current_weather.windspeed} (Kms)`
     WindElement.insertAdjacentText("beforeend", Wind)
 })
