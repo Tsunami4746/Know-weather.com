@@ -16,7 +16,7 @@ api.then((response) => {
     // Checking Day
     let Day
     let Time_image 
-    if (response.current_weather.is_day == 1){
+    if (date.getHours() <=20 && date.getHours() <=8){
         Day = "day"
         DayLogo.src = "/day.jpg"
         DayLogo.parentElement.insertAdjacentText("beforeend", Day)
