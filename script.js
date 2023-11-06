@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // const response = await fetch(`/weather?location=${location}`, {
       //   method: "GET",
       // });
-      const response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=7999ebbdf0964dc9943145145231310&q=${location}&day=2&aqi=no&alerts=no`)
+      const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=7999ebbdf0964dc9943145145231310&q=${location}&day=2&aqi=no&alerts=no`)
       if (!response.ok) {
         throw new Error("Network response was not ok");
       }
