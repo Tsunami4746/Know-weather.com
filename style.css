@@ -1,37 +1,207 @@
-body{
-    margin: 0px; 
-    padding: 0px;
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #443d45;
+  color: white;
+  font-family: "Poppins", sans-serif;
 }
-#logo{
-    margin-left: 10px;
-    height: 50px;
-    width: 50px;
+
+/* Header */
+nav {
+  margin: 30px;
+  display: flex;
+  justify-content: center;
 }
-#weather{ 
-    margin-left: 10px;
+nav h1 {
+  font-size: 3.5rem;
+  margin: 0;
 }
-#main{
-    margin-top: 50px;
+nav img {
+  border-radius: 5px;
+}
+.logo {
+  margin-right: 15px;
+  height: 75px;
+  width: 75px;
+}
+/* Main site */
+.column {
+  margin: auto;
+  margin-top: 35px;
+  display: flex;
+  background-color: #b4a2b3;
+  color: rgb(255, 255, 255);
+  width: 60vw;
+  height: 70vh;
+  align-items: center;
+  border-radius: 10px;  
+}
+/* Main card */
+.main-card {
+  border-radius: 10px;
+  height: 70vh;
+  width: 22vw;
+  display: flex;
+  background-image: url("https://4kwallpapers.com/images/wallpapers/scenery-landscape-mountains-lake-evening-reflections-scenic-1024x768-8821.jpg");
+  font-size: 1.7rem;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 2vh;
+}
+
+/* Section 1 */
+
+.section-one {
+  font-size: 1.5rem;
+  padding: 1.3vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#location{
+    word-wrap: break-word;
+}
+
+#Day {
+  font-weight: bolder;
+  font-size: 1.3em;
+}
+/* Section 2 */
+.section-two {
+  padding-left: 1.3vw;
+  margin-top: 0;
+}
+#Temperature {
+  font-weight: bolder;
+  font-size: 40px;
+}
+#weather {
+  margin-left: 10px;
+}
+/* Second Card */
+
+.second-card {
+  padding: 3vw;
+  width: 38vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+/* Location form box */
+.locate > form{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.text-box{
+  border-radius: 3px;
+  width: 350px;
+  border:#948692 solid 2px;
+  background-color: rgb(230, 230, 230);
+}
+.submit{
+  border-radius: 3px;
+  border: none;
+  height: 30px;
+  width: 80px;
+  background-color: rgb(230, 230, 230);
+}
+
+
+.main {
+  font-weight: 600;
+  margin-top: 0px;
+  font-size: 2rem;
+}
+#wind-box {
+  display: flex;
+  justify-content: space-between;
+}
+#precipitation-box {
+  display: flex;
+  justify-content: space-between;
+}
+#humidity-box {
+  display: flex;
+  justify-content: space-between;
+}
+#weather-condition{
+    word-wrap: break-word;
+}
+
+
+/* STyling for different devices */
+
+@media screen and (max-width: 1330px) {
+  .column{
+    flex-direction: column;
+  }
+  .main-card{
+    background-size: cover;
+  }
+  .main-card, .second-card{
+    width: 60vw;
+  }
+}
+@media screen and (max-width: 700px) {
+  nav{
+    align-items: center ;
+    margin: 60px;
+  }
+  nav > h1{
+    font-size: 2.5rem;
+  }
+  .main-card{
+    height: 50vh;
+    width: 90vw;
+  }
+  .column,.second-card{
+    width: 90vw;
+    height: 100vw;
+  }
+  .section-two{
+    font-size: 1.5rem;
+  }
+  .main{
+    font-size: 1.7rem;
+  }
+  #Temperature , #Weather-Condition , #Day{
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  nav{
+    margin: 30px;
+  }
+  nav > h1{
     font-size: 2rem;
+  }
+  .logo{
+    height: 10vh;
+    width: 18vw;
+  }
 }
-#main img{
-    height: 100px;
-    width: 100px;
+@media screen and (max-width: 500px) {
+  .column{
+    height: 60vh;
+  }
 }
-#TemperatureImg{
-    width: 75px !important;
-    height: 115px !important;
-    margin-left: 15px;
-    margin-right: 10px;
+@media screen and (max-width: 415px) {
+  nav{
+    margin: 20px
+  }
+  nav > h1{
+    font-size: 1.5rem;
+  }
+  .locate{
+    width: 85vw;
+  }
 }
-#WindImg {
-    width: 50px !important;
-    height: 50px !important;
-    margin-left: 20px;
-    margin-top: 10px;
-    margin-right: 30px;
-}
-.container-fluid {
-    width: 50%;
-    margin: 0;
+@media screen and (max-width: 3750px) {
+  .text-box{
+    width: 60vw;
+  }
 }
